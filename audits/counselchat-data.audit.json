@@ -1,0 +1,15 @@
+{
+  "source_file": "counselchat-data.csv",
+  "sha256": "00d7b44d1bb3c300b6077d1442e32db7ac41b6cc337122d238e0ca78b75c7825",
+  "rows": 1482,
+  "empty_rows": 99,
+  "exact_duplicate_questions": 763,
+  "pii_counts": {
+    "email": 2,
+    "url": 242,
+    "phone": 65,
+    "handle": 8
+  },
+  "license": "UNKNOWN",
+  "license_resolved": false
+}

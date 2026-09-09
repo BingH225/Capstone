@@ -1,2 +1,14 @@
-docs/
+docs/*
+!docs/SmartStress_Capstone_Detailed_Project_Plan.md
 /.codex/WORKLOG.md
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+artifacts/
+outputs/
+checkpoints/
+.env
+*.pem

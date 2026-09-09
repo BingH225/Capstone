@@ -1,0 +1,15 @@
+{
+  "source_file": "20220401_counsel_chat.csv",
+  "sha256": "886b7f26ac232f83fa14eb3277b8b00a74ad5550ad37a5cfe4dc2c9b0da3d895",
+  "rows": 2775,
+  "empty_rows": 163,
+  "exact_duplicate_questions": 1909,
+  "pii_counts": {
+    "email": 0,
+    "url": 181,
+    "phone": 70,
+    "handle": 11
+  },
+  "license": "UNKNOWN",
+  "license_resolved": false
+}
