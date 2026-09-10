@@ -1,0 +1,174 @@
+{
+  "manifest": {
+    "schema_version": "1.0",
+    "fitted_at": "2026-09-10T16:43:21.907797Z",
+    "feature_order": [
+      "mean_hr",
+      "std_hr",
+      "tinn",
+      "hrv_index",
+      "nn50",
+      "pnn50",
+      "mean_hrv",
+      "std_hrv",
+      "rmssd",
+      "fft_mean",
+      "fft_std",
+      "sum_psd"
+    ],
+    "config": {
+      "policy_version": "wesad-policy-crossfit-v1-dnn-S16",
+      "expected_model_id": "wesad_dnn_loso_epoch49",
+      "calibrator": "temperature",
+      "conformal_alpha": 0.1,
+      "minimum_confidence": 0.6,
+      "ood_threshold_quantile": 0.99,
+      "minimum_external_quality": 0.5,
+      "quality_soft_z_limit": 6.0,
+      "quality_hard_z_limit": 12.0,
+      "require_baseline_version": false,
+      "temporal": {
+        "window_size": 5,
+        "required_elevated": 3,
+        "threshold_on": 0.65,
+        "threshold_off": 0.45,
+        "cooldown_seconds": 900
+      }
+    },
+    "calibrator": {
+      "kind": "temperature",
+      "temperature": 0.9525124787634058
+    },
+    "quality_profile": {
+      "feature_names": [
+        "mean_hr",
+        "std_hr",
+        "tinn",
+        "hrv_index",
+        "nn50",
+        "pnn50",
+        "mean_hrv",
+        "std_hrv",
+        "rmssd",
+        "fft_mean",
+        "fft_std",
+        "sum_psd"
+      ],
+      "median": [
+        0.7927305400371552,
+        0.0732571929693222,
+        0.3548845946788788,
+        0.0016754005337134004,
+        6.551469596161041e-06,
+        0.7164075374603271,
+        1.0917451977729797,
+        0.4564899802207947,
+        1.074692189693451,
+        0.8140957355499268,
+        0.8933877944946289,
+        0.035705555230379105
+      ],
+      "robust_scale": [
+        0.178679675924778,
+        0.10076126951803453,
+        0.18996253907382488,
+        0.0009565792504465207,
+        2.9931078388472087e-06,
+        0.21267096058130264,
+        0.1227723158955574,
+        0.2524409704148769,
+        0.10807632207870482,
+        0.11277406311035156,
+        0.10971014798283577,
+        0.01696118223052472
+      ],
+      "soft_z_limit": 6.0,
+      "hard_z_limit": 12.0,
+      "minimum_external_quality": 0.5,
+      "minimum_window_seconds": 20.0,
+      "minimum_rpeak_success": 0.8,
+      "maximum_abnormal_rr_fraction": 0.2,
+      "minimum_valid_fraction": 0.8,
+      "maximum_flatline_fraction": 0.05,
+      "maximum_saturation_fraction": 0.05
+    },
+    "ood_detector": {
+      "kind": "robust_diagonal_mahalanobis",
+      "feature_names": [
+        "mean_hr",
+        "std_hr",
+        "tinn",
+        "hrv_index",
+        "nn50",
+        "pnn50",
+        "mean_hrv",
+        "std_hrv",
+        "rmssd",
+        "fft_mean",
+        "fft_std",
+        "sum_psd"
+      ],
+      "center": [
+        0.7927305400371552,
+        0.0732571929693222,
+        0.3548845946788788,
+        0.0016754005337134004,
+        6.551469596161041e-06,
+        0.7164075374603271,
+        1.0917451977729797,
+        0.4564899802207947,
+        1.074692189693451,
+        0.8140957355499268,
+        0.8933877944946289,
+        0.035705555230379105
+      ],
+      "scale": [
+        0.178679675924778,
+        0.10076126951803453,
+        0.18996253907382488,
+        0.0009565792504465207,
+        2.9931078388472087e-06,
+        0.21267096058130264,
+        0.1227723158955574,
+        0.2524409704148769,
+        0.10807632207870482,
+        0.11277406311035156,
+        0.10971014798283577,
+        0.01696118223052472
+      ],
+      "threshold": 4.004197523435033,
+      "threshold_quantile": 0.99
+    },
+    "selective_predictor": {
+      "kind": "binary_split_conformal",
+      "alpha": 0.1,
+      "nonconformity_quantile": 0.5502261943011751,
+      "minimum_confidence": 0.6
+    },
+    "data_provenance": {
+      "protocol": "subject-wise outer LOSO with disjoint OOF reference/calibration subjects",
+      "seed": 5101,
+      "evaluation_subject": "S16",
+      "reference_subjects": [
+        "S11",
+        "S17",
+        "S2",
+        "S3",
+        "S5",
+        "S8",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S13",
+        "S14",
+        "S15",
+        "S4",
+        "S6",
+        "S7"
+      ],
+      "checkpoint_epoch": 49
+    }
+  },
+  "manifest_sha256": "6debf73a53f735118c6fe3556efbcf3d32f5d19257cd6613e30f436fc49929d1"
+}

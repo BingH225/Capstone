@@ -84,7 +84,14 @@ python -m smartstress_policy_reliability evaluate `
   --output artifacts/held_out_reliability_report.json
 ```
 
-报告同时保存校准前后 NLL/Brier/ECE、校准斜率/截距、可直接绘图的 reliability bins、conformal empirical coverage、singleton rate、risk-coverage AURC、状态计数、有效 coverage、selective risk、主动提醒数和 false proactive alerts/hour，以及逐条完整决策。验收时还应在真实 subject-wise held-out WESAD 划分上报告 AUROC/F1 等原 DNN 指标；本包不伪造或替代尚未产生的实验结果。
+报告同时保存校准前后 NLL/Brier/ECE、校准斜率/截距、可直接绘图的 reliability bins、conformal empirical coverage、singleton rate、risk-coverage AURC、状态计数、有效 coverage、selective risk、主动提醒数和 false proactive alerts/hour，以及逐条完整决策。
+
+真实 WESAD subject-wise held-out 实验现已完成，入口为
+`experiments/wesad_policy_reliability_experiment.py`，结果见
+`reports/wesad_policy_reliability/report.md`。该实验固定使用每折 `epoch_49`
+checkpoint，避免依据 held-out 受试者选择 epoch；每个外层折再把其余受试者分成互斥的
+reference/calibration 两组。报告中的选择后 Accuracy/F1 必须始终和 coverage 一起解读，
+不能表述为全样本分类性能提升。
 
 建议门槛必须依据 held-out 结果冻结，而不是直接采用默认值：
 

@@ -1,0 +1,1322 @@
+{
+  "schema_version": "wesad-policy-experiment-v1",
+  "generated_at": "2026-09-10T16:43:22.704785Z",
+  "device": "cuda",
+  "torch_version": "2.9.1+cu128",
+  "numpy_version": "2.3.5",
+  "config": {
+    "subjects": [
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "models": [
+      "attention",
+      "dnn"
+    ],
+    "checkpoint_epoch": 49,
+    "seed": 5101,
+    "conformal_alpha": 0.1,
+    "minimum_confidence": 0.6,
+    "ood_quantile": 0.99,
+    "window_seconds": 1.0
+  },
+  "policy_splits": {
+    "attention:S2": {
+      "reference_subjects": [
+        "S11",
+        "S13",
+        "S14",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S15",
+        "S16",
+        "S17",
+        "S7",
+        "S8",
+        "S9"
+      ],
+      "evaluation_subject": "S2"
+    },
+    "attention:S3": {
+      "reference_subjects": [
+        "S14",
+        "S15",
+        "S17",
+        "S2",
+        "S7",
+        "S8",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "evaluation_subject": "S3"
+    },
+    "attention:S4": {
+      "reference_subjects": [
+        "S10",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S3"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9"
+      ],
+      "evaluation_subject": "S4"
+    },
+    "attention:S5": {
+      "reference_subjects": [
+        "S10",
+        "S11",
+        "S16",
+        "S17",
+        "S2",
+        "S4",
+        "S7"
+      ],
+      "calibration_subjects": [
+        "S13",
+        "S14",
+        "S15",
+        "S3",
+        "S6",
+        "S8",
+        "S9"
+      ],
+      "evaluation_subject": "S5"
+    },
+    "attention:S6": {
+      "reference_subjects": [
+        "S10",
+        "S14",
+        "S16",
+        "S2",
+        "S4",
+        "S8",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S13",
+        "S15",
+        "S17",
+        "S3",
+        "S5",
+        "S7"
+      ],
+      "evaluation_subject": "S6"
+    },
+    "attention:S7": {
+      "reference_subjects": [
+        "S11",
+        "S13",
+        "S15",
+        "S3",
+        "S4",
+        "S5",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S14",
+        "S16",
+        "S17",
+        "S2",
+        "S6",
+        "S8"
+      ],
+      "evaluation_subject": "S7"
+    },
+    "attention:S8": {
+      "reference_subjects": [
+        "S13",
+        "S16",
+        "S17",
+        "S3",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S11",
+        "S14",
+        "S15",
+        "S2",
+        "S4",
+        "S9"
+      ],
+      "evaluation_subject": "S8"
+    },
+    "attention:S9": {
+      "reference_subjects": [
+        "S10",
+        "S11",
+        "S15",
+        "S16",
+        "S17",
+        "S2",
+        "S4"
+      ],
+      "calibration_subjects": [
+        "S13",
+        "S14",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "evaluation_subject": "S9"
+    },
+    "attention:S10": {
+      "reference_subjects": [
+        "S14",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S13",
+        "S15",
+        "S16",
+        "S17",
+        "S4",
+        "S8"
+      ],
+      "evaluation_subject": "S10"
+    },
+    "attention:S11": {
+      "reference_subjects": [
+        "S10",
+        "S13",
+        "S16",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "calibration_subjects": [
+        "S14",
+        "S15",
+        "S17",
+        "S2",
+        "S3",
+        "S4",
+        "S9"
+      ],
+      "evaluation_subject": "S11"
+    },
+    "attention:S13": {
+      "reference_subjects": [
+        "S11",
+        "S15",
+        "S17",
+        "S2",
+        "S4",
+        "S8",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S14",
+        "S16",
+        "S3",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "evaluation_subject": "S13"
+    },
+    "attention:S14": {
+      "reference_subjects": [
+        "S10",
+        "S15",
+        "S16",
+        "S17",
+        "S4",
+        "S6",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S13",
+        "S2",
+        "S3",
+        "S5",
+        "S7",
+        "S8"
+      ],
+      "evaluation_subject": "S14"
+    },
+    "attention:S15": {
+      "reference_subjects": [
+        "S10",
+        "S11",
+        "S13",
+        "S4",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "calibration_subjects": [
+        "S14",
+        "S16",
+        "S17",
+        "S2",
+        "S3",
+        "S5",
+        "S9"
+      ],
+      "evaluation_subject": "S15"
+    },
+    "attention:S16": {
+      "reference_subjects": [
+        "S11",
+        "S17",
+        "S2",
+        "S3",
+        "S5",
+        "S8",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S13",
+        "S14",
+        "S15",
+        "S4",
+        "S6",
+        "S7"
+      ],
+      "evaluation_subject": "S16"
+    },
+    "attention:S17": {
+      "reference_subjects": [
+        "S10",
+        "S13",
+        "S14",
+        "S16",
+        "S4",
+        "S7",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S15",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S8"
+      ],
+      "evaluation_subject": "S17"
+    },
+    "dnn:S2": {
+      "reference_subjects": [
+        "S11",
+        "S13",
+        "S14",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S15",
+        "S16",
+        "S17",
+        "S7",
+        "S8",
+        "S9"
+      ],
+      "evaluation_subject": "S2"
+    },
+    "dnn:S3": {
+      "reference_subjects": [
+        "S14",
+        "S15",
+        "S17",
+        "S2",
+        "S7",
+        "S8",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "evaluation_subject": "S3"
+    },
+    "dnn:S4": {
+      "reference_subjects": [
+        "S10",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S3"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S2",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9"
+      ],
+      "evaluation_subject": "S4"
+    },
+    "dnn:S5": {
+      "reference_subjects": [
+        "S10",
+        "S11",
+        "S16",
+        "S17",
+        "S2",
+        "S4",
+        "S7"
+      ],
+      "calibration_subjects": [
+        "S13",
+        "S14",
+        "S15",
+        "S3",
+        "S6",
+        "S8",
+        "S9"
+      ],
+      "evaluation_subject": "S5"
+    },
+    "dnn:S6": {
+      "reference_subjects": [
+        "S10",
+        "S14",
+        "S16",
+        "S2",
+        "S4",
+        "S8",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S13",
+        "S15",
+        "S17",
+        "S3",
+        "S5",
+        "S7"
+      ],
+      "evaluation_subject": "S6"
+    },
+    "dnn:S7": {
+      "reference_subjects": [
+        "S11",
+        "S13",
+        "S15",
+        "S3",
+        "S4",
+        "S5",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S14",
+        "S16",
+        "S17",
+        "S2",
+        "S6",
+        "S8"
+      ],
+      "evaluation_subject": "S7"
+    },
+    "dnn:S8": {
+      "reference_subjects": [
+        "S13",
+        "S16",
+        "S17",
+        "S3",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S11",
+        "S14",
+        "S15",
+        "S2",
+        "S4",
+        "S9"
+      ],
+      "evaluation_subject": "S8"
+    },
+    "dnn:S9": {
+      "reference_subjects": [
+        "S10",
+        "S11",
+        "S15",
+        "S16",
+        "S17",
+        "S2",
+        "S4"
+      ],
+      "calibration_subjects": [
+        "S13",
+        "S14",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "evaluation_subject": "S9"
+    },
+    "dnn:S10": {
+      "reference_subjects": [
+        "S14",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S13",
+        "S15",
+        "S16",
+        "S17",
+        "S4",
+        "S8"
+      ],
+      "evaluation_subject": "S10"
+    },
+    "dnn:S11": {
+      "reference_subjects": [
+        "S10",
+        "S13",
+        "S16",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "calibration_subjects": [
+        "S14",
+        "S15",
+        "S17",
+        "S2",
+        "S3",
+        "S4",
+        "S9"
+      ],
+      "evaluation_subject": "S11"
+    },
+    "dnn:S13": {
+      "reference_subjects": [
+        "S11",
+        "S15",
+        "S17",
+        "S2",
+        "S4",
+        "S8",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S14",
+        "S16",
+        "S3",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "evaluation_subject": "S13"
+    },
+    "dnn:S14": {
+      "reference_subjects": [
+        "S10",
+        "S15",
+        "S16",
+        "S17",
+        "S4",
+        "S6",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S13",
+        "S2",
+        "S3",
+        "S5",
+        "S7",
+        "S8"
+      ],
+      "evaluation_subject": "S14"
+    },
+    "dnn:S15": {
+      "reference_subjects": [
+        "S10",
+        "S11",
+        "S13",
+        "S4",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "calibration_subjects": [
+        "S14",
+        "S16",
+        "S17",
+        "S2",
+        "S3",
+        "S5",
+        "S9"
+      ],
+      "evaluation_subject": "S15"
+    },
+    "dnn:S16": {
+      "reference_subjects": [
+        "S11",
+        "S17",
+        "S2",
+        "S3",
+        "S5",
+        "S8",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S10",
+        "S13",
+        "S14",
+        "S15",
+        "S4",
+        "S6",
+        "S7"
+      ],
+      "evaluation_subject": "S16"
+    },
+    "dnn:S17": {
+      "reference_subjects": [
+        "S10",
+        "S13",
+        "S14",
+        "S16",
+        "S4",
+        "S7",
+        "S9"
+      ],
+      "calibration_subjects": [
+        "S11",
+        "S15",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S8"
+      ],
+      "evaluation_subject": "S17"
+    }
+  },
+  "models": {
+    "attention": {
+      "model": "attention",
+      "subjects": 15,
+      "rows": 43457,
+      "calibration_raw": {
+        "nll": 0.27368792476225917,
+        "brier": 0.07390333749906124,
+        "ece_15": 0.07123284067807908
+      },
+      "calibration_after": {
+        "nll": 0.28314068607653836,
+        "brier": 0.07503603024991488,
+        "ece_15": 0.07282244546765912
+      },
+      "methods": {
+        "raw_0.5": {
+          "rows": 43457,
+          "accuracy": 0.9072416411625285,
+          "precision": 0.7545857052498419,
+          "recall": 0.8639561349058555,
+          "f1": 0.8055756523416776,
+          "tp": 8351,
+          "tn": 31075,
+          "fp": 2716,
+          "fn": 1315,
+          "total_rows": 43457,
+          "coverage": 1.0,
+          "abstained_rows": 0,
+          "selective_risk": 0.09275835883747152,
+          "auroc": 0.9473582844111491,
+          "notifications": 11067,
+          "false_notifications": 2716,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 224.99482246818695,
+          "calibration": {
+            "nll": 0.27368792476225917,
+            "brier": 0.07390333749906124,
+            "ece_15": 0.07123284067807908
+          },
+          "macro_subject_mean": {
+            "coverage": 1.0,
+            "accuracy": 0.9068734287948412,
+            "precision": 0.7748694473245661,
+            "recall": 0.8598613313792671,
+            "f1": 0.8081268413803737,
+            "selective_risk": 0.09312657120515873
+          }
+        },
+        "calibrated": {
+          "rows": 43457,
+          "accuracy": 0.9072416411625285,
+          "precision": 0.7545857052498419,
+          "recall": 0.8639561349058555,
+          "f1": 0.8055756523416776,
+          "tp": 8351,
+          "tn": 31075,
+          "fp": 2716,
+          "fn": 1315,
+          "total_rows": 43457,
+          "coverage": 1.0,
+          "abstained_rows": 0,
+          "selective_risk": 0.09275835883747152,
+          "auroc": 0.9396479967537945,
+          "notifications": 11067,
+          "false_notifications": 2716,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 224.99482246818695,
+          "calibration": {
+            "nll": 0.28314068607653836,
+            "brier": 0.07503603024991488,
+            "ece_15": 0.07282244546765912
+          },
+          "macro_subject_mean": {
+            "coverage": 1.0,
+            "accuracy": 0.9068734287948412,
+            "precision": 0.7748694473245661,
+            "recall": 0.8598613313792671,
+            "f1": 0.8081268413803737,
+            "selective_risk": 0.09312657120515873
+          }
+        },
+        "quality_ood": {
+          "rows": 39327,
+          "accuracy": 0.9141556691331655,
+          "precision": 0.7653974198918019,
+          "recall": 0.8677754187308327,
+          "f1": 0.8133775566611389,
+          "tp": 7357,
+          "tn": 28594,
+          "fp": 2255,
+          "fn": 1121,
+          "total_rows": 43457,
+          "coverage": 0.9049635271647836,
+          "abstained_rows": 4130,
+          "selective_risk": 0.08584433086683452,
+          "auroc": 0.9432608966973809,
+          "notifications": 9612,
+          "false_notifications": 2255,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 186.80534781508157,
+          "calibration": {
+            "nll": 0.2491660745868309,
+            "brier": 0.06972066363331636,
+            "ece_15": 0.07072694232305327
+          },
+          "macro_subject_mean": {
+            "coverage": 0.9046284368940035,
+            "accuracy": 0.9195923452302611,
+            "precision": 0.7206156682892554,
+            "recall": 0.7896840220079501,
+            "f1": 0.7494073758027524,
+            "selective_risk": 0.08040765476973893
+          }
+        },
+        "selective": {
+          "rows": 37039,
+          "accuracy": 0.9298037204028187,
+          "precision": 0.8122135655362053,
+          "recall": 0.8806211180124224,
+          "f1": 0.845035165097151,
+          "tp": 7089,
+          "tn": 27350,
+          "fp": 1639,
+          "fn": 961,
+          "total_rows": 43457,
+          "coverage": 0.8523137814391237,
+          "abstained_rows": 6418,
+          "selective_risk": 0.07019627959718133,
+          "auroc": 0.9480164590166885,
+          "notifications": 8728,
+          "false_notifications": 1639,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 135.77559426559588,
+          "calibration": {
+            "nll": 0.22623225889368556,
+            "brier": 0.060748771148531604,
+            "ece_15": 0.0585612061373734
+          },
+          "macro_subject_mean": {
+            "coverage": 0.8522294398113235,
+            "accuracy": 0.9315248394538008,
+            "precision": 0.7518152240195689,
+            "recall": 0.7950855245811629,
+            "f1": 0.7686615097866974,
+            "selective_risk": 0.06847516054619904
+          }
+        },
+        "full_temporal": {
+          "rows": 36696,
+          "accuracy": 0.9362873337693481,
+          "precision": 0.835778175313059,
+          "recall": 0.8794077048563183,
+          "f1": 0.8570380335086216,
+          "tp": 7008,
+          "tn": 27350,
+          "fp": 1377,
+          "fn": 961,
+          "total_rows": 43457,
+          "coverage": 0.8444209218307752,
+          "abstained_rows": 6761,
+          "selective_risk": 0.06371266623065186,
+          "auroc": 0.9488574344392612,
+          "notifications": 32,
+          "false_notifications": 19,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 1.5739696711692017,
+          "calibration": {
+            "nll": 0.21765220002940652,
+            "brier": 0.057311079771471686,
+            "ece_15": 0.054265737037430845
+          },
+          "macro_subject_mean": {
+            "coverage": 0.8442976139689929,
+            "accuracy": 0.9369218392683583,
+            "precision": 0.768138679038565,
+            "recall": 0.7905940959042266,
+            "f1": 0.7744442439533759,
+            "selective_risk": 0.06307816073164192
+          }
+        }
+      },
+      "subject_heterogeneity": {
+        "full_policy_coverage_by_subject": {
+          "S2": 0.8669774112585156,
+          "S3": 0.9851851851851852,
+          "S4": 0.9780487804878049,
+          "S5": 0.9811061490896599,
+          "S6": 0.00034614053305642093,
+          "S7": 0.6378116343490304,
+          "S8": 0.9342512908777969,
+          "S9": 0.827681660899654,
+          "S10": 0.8209959623149394,
+          "S11": 0.973621103117506,
+          "S13": 0.8233481684354673,
+          "S14": 0.9945224238274564,
+          "S15": 0.8780321147933037,
+          "S16": 0.984552008238929,
+          "S17": 0.9779841761265909
+        },
+        "coverage_min": 0.00034614053305642093,
+        "coverage_median": 0.9342512908777969,
+        "coverage_max": 0.9945224238274564,
+        "subjects_below_50_percent_coverage": [
+          "S6"
+        ],
+        "subjects_at_least_50_percent_coverage": 14,
+        "risk_improved_at_least_50_percent_coverage": 14,
+        "f1_improved_at_least_50_percent_coverage": 12
+      },
+      "policy_effect": {
+        "coverage_change": -0.15557907816922478,
+        "accepted_risk_change": -0.029045692606819662,
+        "accepted_f1_change": 0.051462381166944016,
+        "naive_per_window_false_dispatch_reduction": 0.9930044182621502,
+        "ece_change_after_calibration": 0.0015896047895800347
+      }
+    },
+    "dnn": {
+      "model": "dnn",
+      "subjects": 15,
+      "rows": 43457,
+      "calibration_raw": {
+        "nll": 0.2548778261963845,
+        "brier": 0.07157465159365459,
+        "ece_15": 0.05986383955459487
+      },
+      "calibration_after": {
+        "nll": 0.2615418235306941,
+        "brier": 0.07345839708863501,
+        "ece_15": 0.05466819751217497
+      },
+      "methods": {
+        "raw_0.5": {
+          "rows": 43457,
+          "accuracy": 0.9032606944796006,
+          "precision": 0.7377677172209647,
+          "recall": 0.8766811504241672,
+          "f1": 0.80124810892587,
+          "tp": 8474,
+          "tn": 30779,
+          "fp": 3012,
+          "fn": 1192,
+          "total_rows": 43457,
+          "coverage": 1.0,
+          "abstained_rows": 0,
+          "selective_risk": 0.09673930552039944,
+          "auroc": 0.9455013162757646,
+          "notifications": 11486,
+          "false_notifications": 3012,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 249.51561313482293,
+          "calibration": {
+            "nll": 0.2548778261963845,
+            "brier": 0.07157465159365459,
+            "ece_15": 0.05986383955459487
+          },
+          "macro_subject_mean": {
+            "coverage": 1.0,
+            "accuracy": 0.9029566116240261,
+            "precision": 0.7568944958147529,
+            "recall": 0.8733470344369674,
+            "f1": 0.8040776328529631,
+            "selective_risk": 0.09704338837597384
+          }
+        },
+        "calibrated": {
+          "rows": 43457,
+          "accuracy": 0.9032606944796006,
+          "precision": 0.7377677172209647,
+          "recall": 0.8766811504241672,
+          "f1": 0.80124810892587,
+          "tp": 8474,
+          "tn": 30779,
+          "fp": 3012,
+          "fn": 1192,
+          "total_rows": 43457,
+          "coverage": 1.0,
+          "abstained_rows": 0,
+          "selective_risk": 0.09673930552039944,
+          "auroc": 0.9401555026273866,
+          "notifications": 11486,
+          "false_notifications": 3012,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 249.51561313482293,
+          "calibration": {
+            "nll": 0.2615418235306941,
+            "brier": 0.07345839708863501,
+            "ece_15": 0.05466819751217497
+          },
+          "macro_subject_mean": {
+            "coverage": 1.0,
+            "accuracy": 0.9029566116240261,
+            "precision": 0.7568944958147529,
+            "recall": 0.8733470344369674,
+            "f1": 0.8040776328529631,
+            "selective_risk": 0.09704338837597384
+          }
+        },
+        "quality_ood": {
+          "rows": 39327,
+          "accuracy": 0.9044676685228977,
+          "precision": 0.734805530687357,
+          "recall": 0.8713139891483841,
+          "f1": 0.7972586476714694,
+          "tp": 7387,
+          "tn": 28183,
+          "fp": 2666,
+          "fn": 1091,
+          "total_rows": 43457,
+          "coverage": 0.9049635271647836,
+          "abstained_rows": 4130,
+          "selective_risk": 0.09553233147710227,
+          "auroc": 0.9397478311951378,
+          "notifications": 10053,
+          "false_notifications": 2666,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 220.8527970177417,
+          "calibration": {
+            "nll": 0.2528528227280796,
+            "brier": 0.07194127266974364,
+            "ece_15": 0.059037704811354855
+          },
+          "macro_subject_mean": {
+            "coverage": 0.9046284368940035,
+            "accuracy": 0.9092148792787179,
+            "precision": 0.6873446902913346,
+            "recall": 0.8025929826698721,
+            "f1": 0.7315720043468603,
+            "selective_risk": 0.09078512072128196
+          }
+        },
+        "selective": {
+          "rows": 36699,
+          "accuracy": 0.9288536472383444,
+          "precision": 0.8144411698027658,
+          "recall": 0.8806226253217306,
+          "f1": 0.8462399151993405,
+          "tp": 7185,
+          "tn": 26903,
+          "fp": 1637,
+          "fn": 974,
+          "total_rows": 43457,
+          "coverage": 0.8444899555882827,
+          "abstained_rows": 6758,
+          "selective_risk": 0.0711463527616556,
+          "auroc": 0.9456289643819624,
+          "notifications": 8822,
+          "false_notifications": 1637,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 135.60991324757808,
+          "calibration": {
+            "nll": 0.22141265919491598,
+            "brier": 0.05930124525799762,
+            "ece_15": 0.03718781227989968
+          },
+          "macro_subject_mean": {
+            "coverage": 0.8444778990939932,
+            "accuracy": 0.9290113375040273,
+            "precision": 0.7386126025058478,
+            "recall": 0.8003008220593937,
+            "f1": 0.7607777728722482,
+            "selective_risk": 0.0709886624959727
+          }
+        },
+        "full_temporal": {
+          "rows": 36402,
+          "accuracy": 0.934536563925059,
+          "precision": 0.8347214076246334,
+          "recall": 0.8796044499381953,
+          "f1": 0.8565753836894372,
+          "tp": 7116,
+          "tn": 26903,
+          "fp": 1409,
+          "fn": 974,
+          "total_rows": 43457,
+          "coverage": 0.837655613595048,
+          "abstained_rows": 7055,
+          "selective_risk": 0.06546343607494098,
+          "auroc": 0.9464221384809421,
+          "notifications": 35,
+          "false_notifications": 22,
+          "observation_hours": 12.071388888888889,
+          "false_notifications_per_hour": 1.8224911981959178,
+          "calibration": {
+            "nll": 0.21415590172028526,
+            "brier": 0.056285250876689785,
+            "ece_15": 0.03336177058892782
+          },
+          "macro_subject_mean": {
+            "coverage": 0.8376001010748891,
+            "accuracy": 0.9341601426239062,
+            "precision": 0.7536045579618018,
+            "recall": 0.797273971403255,
+            "f1": 0.7673653616767642,
+            "selective_risk": 0.06583985737609374
+          }
+        }
+      },
+      "subject_heterogeneity": {
+        "full_policy_coverage_by_subject": {
+          "S2": 0.8705629257798494,
+          "S3": 0.9873015873015873,
+          "S4": 0.9682926829268292,
+          "S5": 0.9989694263139814,
+          "S6": 0.00034614053305642093,
+          "S7": 0.6256925207756233,
+          "S8": 0.866092943201377,
+          "S9": 0.8204152249134948,
+          "S10": 0.7836473755047106,
+          "S11": 0.9636861939020213,
+          "S13": 0.8058883943854844,
+          "S14": 0.9934953782951044,
+          "S15": 0.9022890331397335,
+          "S16": 0.9876416065911432,
+          "S17": 0.9896800825593395
+        },
+        "coverage_min": 0.00034614053305642093,
+        "coverage_median": 0.9022890331397335,
+        "coverage_max": 0.9989694263139814,
+        "subjects_below_50_percent_coverage": [
+          "S6"
+        ],
+        "subjects_at_least_50_percent_coverage": 14,
+        "risk_improved_at_least_50_percent_coverage": 12,
+        "f1_improved_at_least_50_percent_coverage": 10
+      },
+      "policy_effect": {
+        "coverage_change": -0.16234438640495197,
+        "accepted_risk_change": -0.03127586944545846,
+        "accepted_f1_change": 0.05532727476356725,
+        "naive_per_window_false_dispatch_reduction": 0.9926958831341302,
+        "ece_change_after_calibration": -0.005195642042419901
+      }
+    }
+  },
+  "corruption_audits": {
+    "attention": {
+      "rows_per_corruption": 1500,
+      "rejected": {
+        "nonfinite": 1500,
+        "extreme": 1500,
+        "feature_order": 1500
+      },
+      "rejection_rates": {
+        "nonfinite": 1.0,
+        "extreme": 1.0,
+        "feature_order": 1.0
+      }
+    },
+    "dnn": {
+      "rows_per_corruption": 1500,
+      "rejected": {
+        "nonfinite": 1500,
+        "extreme": 1500,
+        "feature_order": 1500
+      },
+      "rejection_rates": {
+        "nonfinite": 1.0,
+        "extreme": 1.0,
+        "feature_order": 1.0
+      }
+    }
+  },
+  "source_manifest": {
+    "data": {
+      "S2": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S2.json",
+        "sha256": "975333735a6f08592cc07f3d6fbb81b3cb0d1bce890affe9f92db82ac0198256"
+      },
+      "S3": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S3.json",
+        "sha256": "3fe95055f4e8febfb3395b5fc9100fb249c55489bf39562110784f56598d1b93"
+      },
+      "S4": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S4.json",
+        "sha256": "cd682e74409e252580e180f2f09c9ea7a728a5c2c4ce166d6fbd09a70dde5bac"
+      },
+      "S5": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S5.json",
+        "sha256": "961fcbebef9396460424baaab6db277a7f46a05d229fba46d1471fab1c76e956"
+      },
+      "S6": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S6.json",
+        "sha256": "29219c274877208cc79eaa834a93236f155a1090814099cf37becc1799a1f52a"
+      },
+      "S7": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S7.json",
+        "sha256": "6ba2e70708af194852ea2729767ef79ad9930898812cda352db0071e3c416ca4"
+      },
+      "S8": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S8.json",
+        "sha256": "76e5391a6cfc3aaba9f2a8252040267b35a5566078126429a442dbee3796aa46"
+      },
+      "S9": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S9.json",
+        "sha256": "6f87e4c2bcc17c48b592c1522da471e4c4e2b5fd578cceb7a0b95e05f337d5ce"
+      },
+      "S10": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S10.json",
+        "sha256": "0d297277b8fd6504dbc430a550a7ef18845825cf9419a893eed3ea15ca19100e"
+      },
+      "S11": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S11.json",
+        "sha256": "95e371c7ddb69101aefa0c86e342159ee5b567ca68a82b28353d21dd6b8c6294"
+      },
+      "S13": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S13.json",
+        "sha256": "68b8ee0f638910536b7fe825519f0b6647b5c4778bfaa3950ef57b7ba287c1bd"
+      },
+      "S14": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S14.json",
+        "sha256": "1654078fb68d87446db62cada3991111d1868cfee690715bb7047a1b6c557130"
+      },
+      "S15": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S15.json",
+        "sha256": "1f8e632c1d9eb71dbf1ab55077cea35ccfbcd70b18acd8894db3045faf641eaa"
+      },
+      "S16": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S16.json",
+        "sha256": "25930ed16c02c113e8fa08ca87a311bce3b9d889c10cfba0e14d7afa4e9fb90d"
+      },
+      "S17": {
+        "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Data_Processed\\WESADECG_S17.json",
+        "sha256": "1fb6e05ab534ec0bddb431f9c3601d061759a4f3ef887575b5ad4c8f97144bd4"
+      }
+    },
+    "checkpoints": {
+      "attention": {
+        "S2": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_0_Attention\\epoch_49.pth",
+          "sha256": "c92789772981dbf64b16d77f2e61d10e0c171e6334190b20fb6d91aef574ee5c"
+        },
+        "S3": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_1_Attention\\epoch_49.pth",
+          "sha256": "e26d4b9f7fee3ef61de959b7e45957787615cb257f762af20072a7a443d25c6d"
+        },
+        "S4": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_2_Attention\\epoch_49.pth",
+          "sha256": "f2d58b6107b41f1447b7c413869696818798b77219f0ef94b5cd54a3f12ee5b6"
+        },
+        "S5": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_3_Attention\\epoch_49.pth",
+          "sha256": "f003cbfcd19c7f749b99841b8a91a5f1503b6e7ac7394759b5af27b9e8098348"
+        },
+        "S6": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_4_Attention\\epoch_49.pth",
+          "sha256": "023228f218d772146ea613e75191926d22e53a4402d928e5a1b2ad96a335d946"
+        },
+        "S7": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_5_Attention\\epoch_49.pth",
+          "sha256": "d5d328442153bd1c63bbb87d6cc0a255ecb1494622cdead6e51b15745dd661b8"
+        },
+        "S8": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_6_Attention\\epoch_49.pth",
+          "sha256": "aedebd53037d5682e17779e0ad52d79e215c6e5ad50d8a2475f1e93d41bb6965"
+        },
+        "S9": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_7_Attention\\epoch_49.pth",
+          "sha256": "09078f344c3eb7cba389b225811fd969ee58ebd7e9df5b391d85de83f48dde98"
+        },
+        "S10": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_8_Attention\\epoch_49.pth",
+          "sha256": "8d992c1616c236e789a6ec274ba253eb8377a2d7654977b6b4cedf3733dae7f4"
+        },
+        "S11": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_9_Attention\\epoch_49.pth",
+          "sha256": "2899833184ecea3291843ad57527d0d039a915b98b333eb93935bb5f9c4aabcd"
+        },
+        "S13": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_10_Attention\\epoch_49.pth",
+          "sha256": "54d65113d7a3fc9fa0b4d93d8888d3800d79d499e38454c1bb74bf3a3ff8640b"
+        },
+        "S14": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_11_Attention\\epoch_49.pth",
+          "sha256": "dab204f8906261ecc9a31251af1428284041192d994448a71b0a9d526a884abb"
+        },
+        "S15": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_12_Attention\\epoch_49.pth",
+          "sha256": "ca5d375706a7caec5937c48ef6d027aa18f594eb2ea0bfe1059265d825fb0b44"
+        },
+        "S16": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_13_Attention\\epoch_49.pth",
+          "sha256": "38571c2fcbb87114c3e05c0474587e5ff0d919ae8d851ab521ba70bc7aa6c042"
+        },
+        "S17": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_14_Attention\\epoch_49.pth",
+          "sha256": "b6b41b755bc9a72aa98f543262812efacd5a8a753e1d40757512a1e1852af1dc"
+        }
+      },
+      "dnn": {
+        "S2": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_0_DNN\\epoch_49.pth",
+          "sha256": "ded6aacb7bbdd6453564dbd2b3819e9ea0fc07eeb354bdcb4057c90ca46f526d"
+        },
+        "S3": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_1_DNN\\epoch_49.pth",
+          "sha256": "3656cb15a16fc0be0fb1af6cf46c28938870fa0cef7f956082b61bde955fec7a"
+        },
+        "S4": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_2_DNN\\epoch_49.pth",
+          "sha256": "fb2a060bbbdfa6fe898e6ae529ddcc718fba96b01c769ec551fef4ae6cb6dad7"
+        },
+        "S5": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_3_DNN\\epoch_49.pth",
+          "sha256": "dda0d79f143573d0b971badeeec80c03ca6f7b0a8b8cba3c77e3bbe48a9c1e84"
+        },
+        "S6": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_4_DNN\\epoch_49.pth",
+          "sha256": "b9059c45fa3118e3a13ad4579e007650b0b9a36eadb66d5ab14848484d446319"
+        },
+        "S7": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_5_DNN\\epoch_49.pth",
+          "sha256": "a3215c15b7df16035da5ef1a27d48a4f213dabfabdd338d1cc7751dcc804f326"
+        },
+        "S8": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_6_DNN\\epoch_49.pth",
+          "sha256": "789ddedc140f389e85afcddeea45900323eb91eb96e38581f72e108da57071fe"
+        },
+        "S9": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_7_DNN\\epoch_49.pth",
+          "sha256": "265399c4bc78550d68bd002a3a05f99c919fbb1b29def2f34e6268020b8e1123"
+        },
+        "S10": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_8_DNN\\epoch_49.pth",
+          "sha256": "639781dc5732465a09bfb646d732cace632af72d5fc772aaea70066905f730df"
+        },
+        "S11": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_9_DNN\\epoch_49.pth",
+          "sha256": "5cb275f5b5c68f90f23344980796a7461520abf7e173f4629e0f076be635e5ac"
+        },
+        "S13": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_10_DNN\\epoch_49.pth",
+          "sha256": "4a68f723ebefa58235a429ce29f13fad186663601db85ebd6b688ba07178555b"
+        },
+        "S14": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_11_DNN\\epoch_49.pth",
+          "sha256": "7dd7b0b30521a9f2f9d3b50554cf222d4c56f7b9713d7c272cb81b1192af9d0e"
+        },
+        "S15": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_12_DNN\\epoch_49.pth",
+          "sha256": "cb86c266a4881d38a78d1a92dae825b899356fbd1e85b3c81a7a5c1c9461201d"
+        },
+        "S16": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_13_DNN\\epoch_49.pth",
+          "sha256": "af0fb26b43d74a017140301995e5b409f2ae45c1b2ba5091d3302da1430c262a"
+        },
+        "S17": {
+          "path": "D:\\NUS\\BMI5101\\smart-stress-model\\Models_CrossVal_Full\\fold_14_DNN\\epoch_49.pth",
+          "sha256": "fe0262794d6e2f0a8c37f9214a110cd869e94a823fcb600b5ff949d04ebf5d7f"
+        }
+      }
+    }
+  }
+}

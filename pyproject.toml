@@ -21,6 +21,10 @@ train = [
   "transformers>=4.48,<6",
   "trl>=0.15,<1",
 ]
+experiment = [
+  "matplotlib>=3.8,<4",
+  "torch>=2.6,<3",
+]
 
 [project.scripts]
 smartstress-reliability = "smartstress_policy_reliability.cli:main"
