@@ -25,7 +25,14 @@ class WesadAttentionPredictorTests(unittest.TestCase):
                 self.assertAlmostEqual(
                     prediction.probability,
                     sample["expected_probability"],
-                    places=6,
+                    # Windows/Linux CPU kernels differ by about 1e-6 on this
+                    # FP32 checkpoint. Keep a tight absolute tolerance while
+                    # independently checking the threshold decision below.
+                    delta=2e-6,
+                )
+                self.assertEqual(
+                    prediction.is_stress,
+                    sample["expected_probability"] >= self.predictor.threshold,
                 )
 
     def test_threshold_is_configurable(self) -> None:
