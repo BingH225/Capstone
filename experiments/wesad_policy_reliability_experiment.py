@@ -804,7 +804,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
 
 def parser() -> argparse.ArgumentParser:
     value = argparse.ArgumentParser(description="Run real WESAD LOSO post-DNN reliability ablations")
-    value.add_argument("--model-repo", default=r"D:\NUS\BMI5101\smart-stress-model")
+    value.add_argument("--model-repo", default=str(REPO_ROOT / "research" / "physio"))
     value.add_argument("--output-dir", default=str(REPO_ROOT / "reports" / "wesad_policy_reliability"))
     value.add_argument("--models", default="attention,dnn")
     value.add_argument("--epoch", type=int, default=49)

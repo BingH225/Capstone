@@ -1,0 +1,581 @@
+{
+  "imported_at": "2026-10-08",
+  "sources": {
+    "agent": {
+      "url": "https://github.com/BingH225/smart-stress-agent.git",
+      "commit": "b8338ed890c2b39612a7e868f82e0ef4bfea3e82",
+      "branch": "main"
+    },
+    "web": {
+      "url": "https://github.com/cecildelakers/smart-stress-ui.git",
+      "commit": "0df64ffb8904c09596ed21acb4e750d4750b0035",
+      "branch": "Updates_New"
+    },
+    "physio": {
+      "url": "https://github.com/BingH225/smart-stress-model",
+      "commit": "b6430a5c2dcb0506d23fef498fecc5135a191304",
+      "branch": "codex/stressid-stepwise-fix"
+    }
+  },
+  "files": [
+    {
+      "source": "agent",
+      "source_path": "convert_counselchat_to_md.py",
+      "destination": "tools/rag/convert_counselchat_to_md.py",
+      "source_sha256": "a435d1207d81b99315aa8067e89f2157824f6bcc6ebeecbbefe2c3fceeb1a7e9"
+    },
+    {
+      "source": "agent",
+      "source_path": "experiments/ab_test_config.py",
+      "destination": "experiments/rag/ab_test_config.py",
+      "source_sha256": "eca8485237d7c38f703e34a21bc33ca163a761faa653a8ee2959ab8d9faa9d5d"
+    },
+    {
+      "source": "agent",
+      "source_path": "experiments/evaluate_bertscore.py",
+      "destination": "experiments/rag/evaluate_bertscore.py",
+      "source_sha256": "045b5e1498b4c94ea012addedf1bd6f50ff0c7ef41593f8905311ae64aad0a31"
+    },
+    {
+      "source": "agent",
+      "source_path": "experiments/evaluate_results.py",
+      "destination": "experiments/rag/evaluate_results.py",
+      "source_sha256": "399bbadfc74ff76a78075d5503735e1f7b9bcaa6b37c7a1c14443a607f93c102"
+    },
+    {
+      "source": "agent",
+      "source_path": "experiments/generate_report.py",
+      "destination": "experiments/rag/generate_report.py",
+      "source_sha256": "c0d5c4a09887e38ae2ca98417620b15dced3e0cc14551b79d52e9381d4ba478d"
+    },
+    {
+      "source": "agent",
+      "source_path": "experiments/generate_report_combined.py",
+      "destination": "experiments/rag/generate_report_combined.py",
+      "source_sha256": "9c9206d5ea384f5dde57beb66f8946f4a5b761a96db23197fa775829456036d1"
+    },
+    {
+      "source": "agent",
+      "source_path": "experiments/generate_test_queries_from_csv.py",
+      "destination": "experiments/rag/generate_test_queries_from_csv.py",
+      "source_sha256": "c0d41b9409d308c931b4a247dd695836323b5a6eb523b7a74c87715446f1888f"
+    },
+    {
+      "source": "agent",
+      "source_path": "experiments/run_ab_test.py",
+      "destination": "experiments/rag/run_ab_test.py",
+      "source_sha256": "19baf5822cbf9f2165ce338636fcdd1a214d76ca31d291967797a9b7f4b3283a"
+    },
+    {
+      "source": "agent",
+      "source_path": "ingest_counselchat_tidb.py",
+      "destination": "tools/rag/ingest_counselchat_tidb.py",
+      "source_sha256": "ed3a07ee9c02b0880e94e86b564421f7dcbffa3dd63ecb9079c5a4b3b8dcc4ee"
+    },
+    {
+      "source": "agent",
+      "source_path": "server.py",
+      "destination": "src/smartstress_langgraph/server.py",
+      "source_sha256": "13dde35ed2ae4de8baa54bfaf6deb7e5e3b03dec4f7e15dc1eaca88dbef3c722"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/__init__.py",
+      "destination": "src/smartstress_langgraph/__init__.py",
+      "source_sha256": "92145887de9f08246863ba658f163d17ed93ebb2032d357c8153ad419294ea91"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/api.py",
+      "destination": "src/smartstress_langgraph/api.py",
+      "source_sha256": "7ca1f807683f87de8661ad1673c86b6cab2e8de261c27dd59c7bb4cba9b703cb"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/config.py",
+      "destination": "src/smartstress_langgraph/config.py",
+      "source_sha256": "2fb4103dc86047c2ecdf73527b16ce91625c5b424eb8906f69d06cea1028f68e"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/examples/__init__.py",
+      "destination": "src/smartstress_langgraph/examples/__init__.py",
+      "source_sha256": "42ccfee5d990ec16f4289290d56becdc20d4151210119d4fdbef3794b152c556"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/examples/demo_session.py",
+      "destination": "src/smartstress_langgraph/examples/demo_session.py",
+      "source_sha256": "d224e19a2be585147e4214c8b9736abc93ef5a042a288f15605c11c7d7fb8aed"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/examples/ingest_docs_example.py",
+      "destination": "src/smartstress_langgraph/examples/ingest_docs_example.py",
+      "source_sha256": "b12823ad56104ccf52790d16c620e82e226d3d106f54326438f30720af8f3f5c"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/examples/sample_data.py",
+      "destination": "src/smartstress_langgraph/examples/sample_data.py",
+      "source_sha256": "5df6fe616a266ac859dcc738a5210afb51632a7028bde44ede64512ed0b56edf"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/graph.py",
+      "destination": "src/smartstress_langgraph/graph.py",
+      "source_sha256": "6ddf1a9048c651b896e7b6e62e6bde05504846f4749a412866804187b5f67739"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/io_models.py",
+      "destination": "src/smartstress_langgraph/io_models.py",
+      "source_sha256": "2ba7331b4f7fb3dfa9e80bdb4f56dbebae6becea183763dcfc21388e8689dab2"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/llm/__init__.py",
+      "destination": "src/smartstress_langgraph/llm/__init__.py",
+      "source_sha256": "cb6f44053751c39f3796eeb926af65775c5ea9c828e1253c42db03dd66aaf5cf"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/llm/client.py",
+      "destination": "src/smartstress_langgraph/llm/client.py",
+      "source_sha256": "981378ddbac72bfa93663e4650303df401411b3a4f94d3e26b156f98d6b46037"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/llm/prompts.py",
+      "destination": "src/smartstress_langgraph/llm/prompts.py",
+      "source_sha256": "288337a5db74463b296f554a14754a24a02941561ca3dcc1cf4bac20d298514b"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/nodes/__init__.py",
+      "destination": "src/smartstress_langgraph/nodes/__init__.py",
+      "source_sha256": "ddc54cb8c652ad2b56c4a359d7905b03c25ab464a179f1e92fd0afa985df7ffd"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/nodes/mind_care_node.py",
+      "destination": "src/smartstress_langgraph/nodes/mind_care_node.py",
+      "source_sha256": "5be3d4ae247f9242f10690ac65b418700b5ea7b663f1ea1941cce7e94a112021"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/nodes/physio_sense_node.py",
+      "destination": "src/smartstress_langgraph/nodes/physio_sense_node.py",
+      "source_sha256": "98fc8ee513b4dabd82376ce0ba8d3a3ee13beaa572deb09e197b5fcb2295094d"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/nodes/task_relief_nodes.py",
+      "destination": "src/smartstress_langgraph/nodes/task_relief_nodes.py",
+      "source_sha256": "1a3d3c498ea9954ebc1cb13a98bc934257bae1bf8123ad3f7db2e334993abd72"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/orchestration.py",
+      "destination": "src/smartstress_langgraph/orchestration.py",
+      "source_sha256": "20b4e2a8a0012b9a677b7cce1968ec6a871bfdec6923b1e0b2d9b8f5c82459f1"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/physio/__init__.py",
+      "destination": "src/smartstress_langgraph/physio/__init__.py",
+      "source_sha256": "b5e95ca09b00362a318235cede30aa302476857e8cc966f73b0b0fe401bd260d"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/physio/artifacts/wesad_attention_v1.json",
+      "destination": "src/smartstress_langgraph/physio/artifacts/wesad_attention_v1.json",
+      "source_sha256": "f856ff8f8c9dd4daac22c477403fdafcd687fc9976c95af40691e500ad426baf"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/physio/artifacts/wesad_attention_v1_s17_epoch_37.pth",
+      "destination": "src/smartstress_langgraph/physio/artifacts/wesad_attention_v1_s17_epoch_37.pth",
+      "source_sha256": "198cc7ce41d113cca1cafb4d2d08f7693d7cf052145e1bd953887a60b3f75161"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/physio/explain.py",
+      "destination": "src/smartstress_langgraph/physio/explain.py",
+      "source_sha256": "3be2aaed622dad629ac794e0136c76f302cab2a863fd3f9b45d56344e571cc64"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/physio/features.py",
+      "destination": "src/smartstress_langgraph/physio/features.py",
+      "source_sha256": "143de0608b438f15a24c2405db653de000da7da8fd8aeefcd0ccf9206e37a76a"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/physio/model.py",
+      "destination": "src/smartstress_langgraph/physio/model.py",
+      "source_sha256": "1289c3e58a41f5500596793f5cbb48934c4378289d7b9ba6485824b598f01cdf"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/rag/__init__.py",
+      "destination": "src/smartstress_langgraph/rag/__init__.py",
+      "source_sha256": "cd61e54bdb68c2bb56d8f0334443f6d996024551e200b4415f6bc4e3b81a29f9"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/rag/ingestion.py",
+      "destination": "src/smartstress_langgraph/rag/ingestion.py",
+      "source_sha256": "483beba9ee6880afa6c723854bbe6c2462e88761e5fef794e609a46daed97eca"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/rag/retrieval.py",
+      "destination": "src/smartstress_langgraph/rag/retrieval.py",
+      "source_sha256": "9b1691e6c991ef5338a3af84c64c49be7fea613cc4cabff29b62545bd65db9a6"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/rag/schemas.py",
+      "destination": "src/smartstress_langgraph/rag/schemas.py",
+      "source_sha256": "572e7351565c7ea4a82003881f3fe150e1dd027b5c9d0b2926c4bf83163637a5"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/rag/tidb_vector_store.py",
+      "destination": "src/smartstress_langgraph/rag/tidb_vector_store.py",
+      "source_sha256": "1694cc103115bcfb28b37ce65a2a03bb86fb495cdee8d3055926e9feea9b37b5"
+    },
+    {
+      "source": "agent",
+      "source_path": "smartstress_langgraph/state.py",
+      "destination": "src/smartstress_langgraph/state.py",
+      "source_sha256": "abd9a4bc09fdff8e559c9c3dc40dccf561af4ab793eb3f0b7d5beaa037b5809b"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/fixtures/wesad_attention_v1_golden.json",
+      "destination": "tests/agent/fixtures/wesad_attention_v1_golden.json",
+      "source_sha256": "545b6c68edc3801be388f2d95f8e76484a3ae973f916d8ba884c29627826f263"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/test_closed_loop_core.py",
+      "destination": "tests/agent/test_closed_loop_core.py",
+      "source_sha256": "6c177b0cb797f143938685775dc22922e43040961a04c1dfa8e5646b7469dc40"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/test_io_models.py",
+      "destination": "tests/agent/test_io_models.py",
+      "source_sha256": "1d0a28538d8fc0f9816b7124d748fd8f32b5c120dc5f6f3b64761b8c2542f1c3"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/test_mind_care.py",
+      "destination": "tests/agent/test_mind_care.py",
+      "source_sha256": "1039fb3ad2db48ee135b54bce4392f4fa10aad863fe7de6077bf4e772b425be1"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/test_physio_explain.py",
+      "destination": "tests/agent/test_physio_explain.py",
+      "source_sha256": "e23e4b750628213d6e90c45468506998d9f8050277354ea1d25d7adb62547262"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/test_physio_features.py",
+      "destination": "tests/agent/test_physio_features.py",
+      "source_sha256": "63a7a4baac5da645b02f52877ab22f6a7f97de483c6ad0efac8d722251cc6b1d"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/test_physio_model.py",
+      "destination": "tests/agent/test_physio_model.py",
+      "source_sha256": "86bc7ccadd45c721b74d1e492071a4354dbfdc9d68ade450eafcb9bd7c83f4ac"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/test_physio_node.py",
+      "destination": "tests/agent/test_physio_node.py",
+      "source_sha256": "09a32a3c4d43c0bfd744463223804dc088b9ceb90464bb88bd6bcbc4bc9c0f7c"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/test_server_contract.py",
+      "destination": "tests/agent/test_server_contract.py",
+      "source_sha256": "e8095bc5321adb6be538beef6298921ca8b7d5708f87896d74da58f55a35029a"
+    },
+    {
+      "source": "agent",
+      "source_path": "tests/test_task_relief.py",
+      "destination": "tests/agent/test_task_relief.py",
+      "source_sha256": "36db7a9a8ed907ab8e8fca6ac638395b34eafd5b107584039732cdf7be4bfaeb"
+    },
+    {
+      "source": "web",
+      "source_path": "index.html",
+      "destination": "apps/web/index.html",
+      "source_sha256": "f629ce0d2d2f1c4443cd564747a410db9c47d8b0a2ad420292da8d0c675c7dcc"
+    },
+    {
+      "source": "web",
+      "source_path": "package-lock.json",
+      "destination": "apps/web/package-lock.json",
+      "source_sha256": "3627cc666a16e12b0c77d755fd6b6a50e323d4bc2be28a9827a20f9c9be2272d"
+    },
+    {
+      "source": "web",
+      "source_path": "package.json",
+      "destination": "apps/web/package.json",
+      "source_sha256": "d08ef3d9b659729f7f9510667896d67cb90ad6108e406405fbd296dc751d294b"
+    },
+    {
+      "source": "web",
+      "source_path": "public/reports/patient1-monthly-demo.txt",
+      "destination": "apps/web/public/reports/patient1-monthly-demo.txt",
+      "source_sha256": "030771db297585e9c6302cebecd0274962127054d6a8f0cf46d1f51998ab07e4"
+    },
+    {
+      "source": "web",
+      "source_path": "public/reports/patient1-weekly-demo.txt",
+      "destination": "apps/web/public/reports/patient1-weekly-demo.txt",
+      "source_sha256": "621305b27dcec1608bc10bbb441f0f497d0df414fd8a18ab1562f1aada942a1e"
+    },
+    {
+      "source": "web",
+      "source_path": "src/App.css",
+      "destination": "apps/web/src/App.css",
+      "source_sha256": "46247ca78b5ccb8c505baceceab8747d30ef5aedd8b2748934525a72eca64664"
+    },
+    {
+      "source": "web",
+      "source_path": "src/App.jsx",
+      "destination": "apps/web/src/App.jsx",
+      "source_sha256": "c992cf9d8cc939fa666b491aa32421778625e1576d2dbcc673e714152d9d139b"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/ChatPanel.css",
+      "destination": "apps/web/src/components/ChatPanel.css",
+      "source_sha256": "4c3cd6839f7445d396bec04aeb0266517fbaa0eafcdb26362a1bd4d48197a673"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/ChatPanel.jsx",
+      "destination": "apps/web/src/components/ChatPanel.jsx",
+      "source_sha256": "cb100e17fd14ff5790a7f86c6510d3583b221eec5d4f11d07ea9d792c583fddd"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/DetectionPanel.css",
+      "destination": "apps/web/src/components/DetectionPanel.css",
+      "source_sha256": "e33536e153103c22b7dedea6702a4af1cce9addfbf1b984ad277fc578b29c6fb"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/DetectionPanel.jsx",
+      "destination": "apps/web/src/components/DetectionPanel.jsx",
+      "source_sha256": "d61407601828b4e0ff005300036e7f39e5c5a41e64cac56e4801c03e895a8421"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/DoctorDashboard.css",
+      "destination": "apps/web/src/components/DoctorDashboard.css",
+      "source_sha256": "77afcdf784e653dadf7b2aba0a659e070fa3f020285b3b438e28051beeaaba73"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/DoctorDashboard.jsx",
+      "destination": "apps/web/src/components/DoctorDashboard.jsx",
+      "source_sha256": "2f6500765d806f4eb2d18252b86b63f2b980a5816b6e07310ebfca8b6bfb5ac8"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/ExplainabilityPanel.css",
+      "destination": "apps/web/src/components/ExplainabilityPanel.css",
+      "source_sha256": "f95ace638e17deaecaa83a614ba10fd86864303f64556dbcbf39cf4ca8f5466c"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/ExplainabilityPanel.jsx",
+      "destination": "apps/web/src/components/ExplainabilityPanel.jsx",
+      "source_sha256": "a7bdc315c468472e98199a0f08466eb94f64eff2456686281834a7bb979d10c3"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/HeaderBar.css",
+      "destination": "apps/web/src/components/HeaderBar.css",
+      "source_sha256": "73570cee94845d0a64cce480273e193b663511d1ea6e12062b3f99eef68ef3de"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/HeaderBar.jsx",
+      "destination": "apps/web/src/components/HeaderBar.jsx",
+      "source_sha256": "7515d0a0785e9e1793fb7a9a38a4751a3f52f4f74f9e10845e788cd6eabc93b5"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/QuickActions.css",
+      "destination": "apps/web/src/components/QuickActions.css",
+      "source_sha256": "6dc33e1ee7cb3e4657463094dc94056651994d108f90e5fb58b227eb5a5fd75c"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/QuickActions.jsx",
+      "destination": "apps/web/src/components/QuickActions.jsx",
+      "source_sha256": "3eadfe0370dc2b48d1589c45fda28e4ff7df16613a855c46b67632a765d70689"
+    },
+    {
+      "source": "web",
+      "source_path": "src/components/TimelineChart.jsx",
+      "destination": "apps/web/src/components/TimelineChart.jsx",
+      "source_sha256": "3ee09919809fb4eb6030aad259cf74535a935764447e2eb9f5b388b9df32ca04"
+    },
+    {
+      "source": "web",
+      "source_path": "src/index.css",
+      "destination": "apps/web/src/index.css",
+      "source_sha256": "49898b21c2572c28cffc9b7024d4c681979b023bfb8e7c707ab3c3b37e7b1ac3"
+    },
+    {
+      "source": "web",
+      "source_path": "src/main.jsx",
+      "destination": "apps/web/src/main.jsx",
+      "source_sha256": "8b51374157f3132ab546bd5a4b231be5cbd6fda41e75a2db5ba19d062ce218b2"
+    },
+    {
+      "source": "web",
+      "source_path": "src/mockData.js",
+      "destination": "apps/web/src/mockData.js",
+      "source_sha256": "6bc756c26e14287c49c6e5e6170464452618a26078ec78a5867a7eba6f8fe477"
+    },
+    {
+      "source": "web",
+      "source_path": "src/services/apiClient.js",
+      "destination": "apps/web/src/services/apiClient.js",
+      "source_sha256": "609a8713250892adb3fd8d4b3996b21009554adec3b3993311c2d236ffbf99ae"
+    },
+    {
+      "source": "web",
+      "source_path": "src/services/difyClient.js",
+      "destination": "apps/web/src/services/difyClient.js",
+      "source_sha256": "a4281b792a3629132475dbdb235767d9f122254fb3e5573ece034333b2564147"
+    },
+    {
+      "source": "web",
+      "source_path": "vite.config.js",
+      "destination": "apps/web/vite.config.js",
+      "source_sha256": "cebe846a474fcad3dd8bc9736ae9226e604dc326c14b085ee06c759e3c6e0d33"
+    },
+    {
+      "source": "physio",
+      "source_path": "Data_preprocessing.py",
+      "destination": "research/physio/Data_preprocessing.py",
+      "source_sha256": "f208ea4d2ce85422a27234776de3eea6ed6119b85ea11630b9999e245929e1c7"
+    },
+    {
+      "source": "physio",
+      "source_path": "Model-training-attention.py",
+      "destination": "research/physio/Model-training-attention.py",
+      "source_sha256": "70fd846662be80929203b2c8c51e872b6e1dd9db133f5b1e68fa1da5f6aa5dc6"
+    },
+    {
+      "source": "physio",
+      "source_path": "Model-training.py",
+      "destination": "research/physio/Model-training.py",
+      "source_sha256": "4169d350eb9664fc2e3eb02cc196dfb2438c1e45e67e7f8772bebd86d3fd515f"
+    },
+    {
+      "source": "physio",
+      "source_path": "Model_interpretability.py",
+      "destination": "research/physio/Model_interpretability.py",
+      "source_sha256": "79edd8cf8df83deb62918dde720511035cea8d966e25cbce1ab06377b8936875"
+    },
+    {
+      "source": "physio",
+      "source_path": "Model_testing-attention.py",
+      "destination": "research/physio/Model_testing-attention.py",
+      "source_sha256": "8c3b0a618884d6e994acc5da4b5dbd347f29999fbf96f9fdac7ef09cc1b37e5b"
+    },
+    {
+      "source": "physio",
+      "source_path": "Model_testing.py",
+      "destination": "research/physio/Model_testing.py",
+      "source_sha256": "6ea85f01d3b087946a66de04a5319f809d982c79417b585b371548fb4e3b6a61"
+    },
+    {
+      "source": "physio",
+      "source_path": "docs/stressid_followup_plan.md",
+      "destination": "research/physio/docs/stressid_followup_plan.md",
+      "source_sha256": "ef7c4d3f90538cd2ed5dda8a839510a9fd81200aacaf46d6698d40c02a63c59d"
+    },
+    {
+      "source": "physio",
+      "source_path": "docs/stressid_manuscript_outline.md",
+      "destination": "research/physio/docs/stressid_manuscript_outline.md",
+      "source_sha256": "e16e85c2e41fb7231b49685005b5f22c9d86db29d06493858a3f10bb265f9efa"
+    },
+    {
+      "source": "physio",
+      "source_path": "evaluate_mapped_json.py",
+      "destination": "research/physio/evaluate_mapped_json.py",
+      "source_sha256": "ccde9897323301a29b93b0b9ce932743f20a8fbf8d3bfe23bb4de1d2993091e1"
+    },
+    {
+      "source": "physio",
+      "source_path": "evaluate_swell_approx_mapping.py",
+      "destination": "research/physio/evaluate_swell_approx_mapping.py",
+      "source_sha256": "03e4e78d8dc1437af95a5cb62f96cc14c9f977d11b882990c4ca07c08a99b108"
+    },
+    {
+      "source": "physio",
+      "source_path": "preprocess_stressid.py",
+      "destination": "research/physio/preprocess_stressid.py",
+      "source_sha256": "51577a1392f15b547371e4d9a957772c6b6cb1682e5bbc98a98e38f7706fd1ec"
+    },
+    {
+      "source": "physio",
+      "source_path": "preprocess_wesad_100hz.py",
+      "destination": "research/physio/preprocess_wesad_100hz.py",
+      "source_sha256": "61487a7a894e5d532b66835a9c6c7ecf5efe762eb926a81badb53ba7c7110dad"
+    },
+    {
+      "source": "physio",
+      "source_path": "scripts/prepare_stepwise_assets.py",
+      "destination": "research/physio/scripts/prepare_stepwise_assets.py",
+      "source_sha256": "57f38e45a4716d5bd32444bf74e0ff19531a301b86bc9a9536201184af9befe1"
+    },
+    {
+      "source": "physio",
+      "source_path": "scripts/run_stressid_adaptation.py",
+      "destination": "research/physio/scripts/run_stressid_adaptation.py",
+      "source_sha256": "9d27c724be398e96f5586418f5ddbec79f6a1e3ece3e9704e8a1ec26122b2f86"
+    },
+    {
+      "source": "physio",
+      "source_path": "Cross_validation_ablation.py",
+      "destination": "research/physio/Cross_validation_ablation.py",
+      "source_sha256": "21ed0fd2cd71e7f8c6d6a010fc2c626a8a8b785749fa9100a30bfc9a4501c52a"
+    },
+    {
+      "source": "physio",
+      "source_path": "Cross_validation_ablation_100hz.py",
+      "destination": "research/physio/Cross_validation_ablation_100hz.py",
+      "source_sha256": "424d23681e2779135a4fb3f392b95897af0cdb10122ca007913daf9ba3d842f4"
+    },
+    {
+      "source": "physio",
+      "source_path": "remote_bundle_gpu_20260410/evaluate_stressid_stepwise.py",
+      "destination": "research/physio/evaluate_stressid_stepwise.py",
+      "source_sha256": "d16c6f81e7ee5091ed7bc609f740a5c30401a88897a2b49ddbf02060ba70a6f9"
+    }
+  ],
+  "excluded": [
+    "Git metadata and submodule checkout",
+    "credentials and .env files",
+    "raw/processed datasets and full training checkpoints",
+    "CounselChat-derived corpus and test_queries.json with unresolved licensing",
+    "build caches and cluster/account-specific job orchestration"
+  ]
+}

@@ -1,0 +1,27 @@
+# Validated on Python 3.11, 2026-10-08. Constraints, not an all-platform lock.
+# Torch local CUDA/CPU suffix is intentionally omitted. Install your target build first.
+setuptools==79.0.1
+numpy==2.3.5
+scipy==1.17.1
+torch==2.9.1
+heartpy==1.2.7
+shap==0.50.0
+fastapi==0.142.4
+uvicorn==0.54.0
+pydantic==2.13.5
+langgraph==1.2.14
+langgraph-checkpoint==4.2.0
+langgraph-checkpoint-sqlite==3.1.1
+langchain-core==1.6.7
+google-genai==1.75.0
+google-generativeai==0.8.6
+mysql-connector-python==9.7.0
+python-dotenv==1.2.1
+pandas==2.3.3
+scikit-learn==1.8.0
+matplotlib==3.10.8
+seaborn==0.13.2
+tqdm==4.67.1
+ipython==9.17.1
+pytest==9.1.1
+httpx==0.28.1
